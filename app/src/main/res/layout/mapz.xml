@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+
+    android:orientation="vertical"
+               android:id="@+id/content">
+
+    <fragment
+        android:id="@+id/container"
+        class="com.shabab.snalbs.MapViewFragment"
+        android:layout_width="fill_parent"
+
+        android:layout_height="fill_parent"
+       />
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_weight="12">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:weightSum="100">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip" android:background="@color/colorPrimary"
+                    android:weightSum="100" android:layout_weight="10">
+                <View
+
+                        android:layout_width="0dip"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"/>
+                <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent" android:layout_weight="28">
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView5" android:layout_weight="29.7"
+                            android:layout_gravity="center_vertical" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <TextView
+
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="66"
+                      android:id="@+id/textShopName" android:layout_marginLeft="5dip"
+                        android:gravity="right" android:layout_gravity="center_vertical"
+                     />
+            </LinearLayout>
+            <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip" android:layout_weight="0.5" android:background="#fff7fff7"
+                    >
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip" android:layout_weight="82"
+                    android:paddingBottom="10dip">
+
+                <RadioGroup
+                        android:id="@+id/rg_views"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+                        android:background="#cc000000" android:paddingLeft="5dip" android:paddingRight="5dip">
+
+                    <RadioButton
+                            android:id="@+id/rb_normal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Normal"
+                            android:checked="true" />
+
+                    <RadioButton
+                            android:id="@+id/rb_satellite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Satellite"/>
+
+                    <RadioButton
+                            android:id="@+id/rb_terrain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Terrain"/>
+
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip" android:layout_weight="0.5" android:background="#fff7fff7"
+                    >
+            </RelativeLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip" android:layout_weight="7" android:weightSum="100"
+                   >
+                <View
+
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.3"/>
+                <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent" android:id="@+id/relBack" android:layout_weight="9"
+                        android:gravity="center">
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_vertical" android:layout_weight="5"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageVi"
+
+            android:layout_gravity="center_horizontal" android:visibility="visible"
+            android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
